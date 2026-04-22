@@ -1169,6 +1169,39 @@ ul { list-style: none; }
   transform: translateX(2px);
 }
 
+/* LINE CTA button (replaces email form) */
+.cta-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 44px;
+  margin: 0 auto 40px;
+  background: linear-gradient(135deg, #06c755 0%, #05a649 100%);
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  box-shadow: 0 12px 32px rgba(6, 199, 85, 0.35), 0 2px 4px rgba(6, 199, 85, 0.2);
+  transition: transform 0.25s cubic-bezier(.2,.7,.1,1), box-shadow 0.25s;
+  text-decoration: none;
+}
+.cta-line:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 44px rgba(6, 199, 85, 0.5), 0 4px 8px rgba(6, 199, 85, 0.25);
+  color: #fff;
+}
+.cta-line__icon { width: 28px; height: 28px; flex: 0 0 28px; }
+.cta-line__arrow { color: #fff; }
+@media (max-width: 640px) {
+  .cta-line {
+    width: 100%;
+    justify-content: center;
+    padding: 20px 24px;
+    font-size: 17px;
+  }
+}
+
 .cta-meta {
   display: flex;
   justify-content: center;
